@@ -5,6 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // Served from https://mobile1x.com/vahansetu/ (proxied by the main site).
+    base: '/vahansetu/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

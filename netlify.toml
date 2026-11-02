@@ -1,0 +1,16 @@
+[build]
+  command = "bun run build"
+  publish = "dist"
+
+# The app is built with Vite `base: '/vahansetu/'`, so every asset URL starts
+# with /vahansetu/. The main site (mobile1x.com) proxies /vahansetu/* here;
+# these rules map that prefix back onto the files in dist/.
+[[redirects]]
+  from = "/vahansetu"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/vahansetu/*"
+  to = "/:splat"
+  status = 200
