@@ -5,8 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    // Served from https://mobile1x.com/vahansetu/ (proxied by the main site).
-    base: '/vahansetu/',
+    // Served from https://www.therahulpahuja.com/vs/ (static files in the resume_ts repo).
+    base: '/vs/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
